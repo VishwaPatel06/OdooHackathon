@@ -1,0 +1,72 @@
+expense-management-system/
+├── backend/
+│   ├── alembic/
+│   │   ├── versions/
+│   │   ├── env.py
+│   │   └── script.py.mako
+│   ├── app/
+│   │   ├── __init__.py
+│   │   ├── main.py
+│   │   ├── core/
+│   │   │   ├── __init__.py
+│   │   │   ├── config.py
+│   │   │   ├── security.py
+│   │   │   └── database.py
+│   │   ├── models/
+│   │   │   ├── __init__.py
+│   │   │   ├── company.py
+│   │   │   ├── user.py
+│   │   │   ├── expense.py
+│   │   │   ├── approval.py
+│   │   │   └── audit.py
+│   │   ├── schemas/
+│   │   │   ├── __init__.py
+│   │   │   ├── company.py
+│   │   │   ├── user.py
+│   │   │   ├── expense.py
+│   │   │   └── approval.py
+│   │   ├── api/
+│   │   │   ├── __init__.py
+│   │   │   ├── deps.py
+│   │   │   └── v1/
+│   │   │       ├── __init__.py
+│   │   │       ├── auth.py
+│   │   │       ├── users.py
+│   │   │       ├── expenses.py
+│   │   │       ├── approvals.py
+│   │   │       └── admin.py
+│   │   ├── services/
+│   │   │   ├── __init__.py
+│   │   │   ├── auth_service.py
+│   │   │   ├── user_service.py
+│   │   │   ├── expense_service.py
+│   │   │   ├── approval_service.py
+│   │   │   ├── currency_service.py
+│   │   │   └── audit_service.py
+│   │   └── tests/
+│   │       ├── __init__.py
+│   │       ├── test_approval_logic.py
+│   │       └── test_expense_workflow.py
+│   ├── alembic.ini
+│   ├── requirements.txt
+│   └── README.md
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── ui/
+│   │   │   ├── layout/
+│   │   │   ├── expense/
+│   │   │   ├── approval/
+│   │   │   └── admin/
+│   │   ├── pages/
+│   │   ├── services/
+│   │   ├── hooks/
+│   │   ├── types/
+│   │   ├── utils/
+│   │   └── App.tsx
+│   ├── package.json
+│   └── README.md
+└── docs/
+    ├── DATABASE_SCHEMA.md
+    ├── API_DOCUMENTATION.md
+    └── SETUP_GUIDE.md
